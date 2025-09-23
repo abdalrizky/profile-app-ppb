@@ -1,16 +1,6 @@
-# profile_app_ppb
+# Aplikasi Profil Diri
 
-A new Flutter project.
+Aplikasi ini layaknya seperti CV—menampilkan deskripsi singkat tentang diri, keahlian, hingga proyek apa yang pernah dikerjakan.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Tampilan Aplikasi
+<img src="https://github.com/user-attachments/assets/a9fd7ad2-10ef-4648-951a-f4e77ed6ef68" width="300">
