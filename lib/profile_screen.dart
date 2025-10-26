@@ -51,7 +51,7 @@ class ProfileScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.all(20.0),
+          padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
@@ -226,7 +226,7 @@ class ProfileScreen extends StatelessWidget {
   }) {
     return Card(
       elevation: 2.0,
-      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 8.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 4.0),
       color: isSpecial ? Colors.blue[700] : Colors.white,
       child: ListTile(
         leading: leadingWidget,
