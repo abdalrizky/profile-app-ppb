@@ -140,7 +140,27 @@ class ProfileScreen extends StatelessWidget {
                 ),
                 title: 'JapriDonk!',
                 subtitle: 'Aplikasi yang memungkinkan pengguna untuk mengirim pesan WhatsApp tanpa harus menyimpan nomor ke kontak.',
-                onTap: () => _launchURL(playStoreUrl),
+                onTap: () => showModalBottomSheet(context: context, showDragHandle: true, builder: (BuildContext context) {
+                  return Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 28.0),
+                    child: Container(
+                    height: 800,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                          Center(
+                            child: Text('Fitur:\n- Pengenalan teks nomor telepon dari gambar. Bagi kamu yang males ngetik nomornya satu per satu, kamu bisa coba manfaatkan fitur ini. Tinggal jepret foto di aplikasi atau ambil dari galeri ponsel, setelah itu kamu bisa salin nomornya atau langsung masuk ke WhatsApp.\n- Seleksi teks nomor telepon dari aplikasi lain, misalnya dari aplikasi telepon bawaan dan pilih "Japri". Kamu bisa langsung masuk ke WhatsApp tanpa harus membuka JapriDonk!\n- Ukuran aplikasi ini sangat kecil; hanya sekitar 2 MB. Cocok untuk diinstal di berbagai device dengan penyimpanan minim.\n- Tersedia mode gelap.\n- Tidak ada iklan.'),
+                          ),
+                          SizedBox(height: 20.0,),
+                          ElevatedButton(
+                              onPressed: () => _launchURL(playStoreUrl),
+                              child: Text('Ke Play Store'),
+                          )
+                        ],
+                      )
+                    ),
+                  );
+                }),
                 isSpecial: true,
               ),
               _buildLinkCard(
