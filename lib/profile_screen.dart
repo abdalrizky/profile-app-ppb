@@ -14,7 +14,7 @@ class ProfileScreen extends StatelessWidget {
   final String instagramUrl = "https://instagram.com/aabdalrizky";
   final String playStoreUrl = "https://play.google.com/store/apps/details?id=com.abdalrizky.japridonk";
   final String djangourseUrl = "http://206.189.81.134";
-  final String fotoProfilUrl = "assets/images/abdal.jpeg";
+  final String fotoProfilUrl = "assets/images/profile_picture.jpg";
   final String japriDonkLogoPath = "assets/images/japridonk.webp";
   final String djangourseLogoPath = "assets/images/djangourse.png";
 
