@@ -14,9 +14,11 @@ class ProfileScreen extends StatelessWidget {
   final String instagramUrl = "https://instagram.com/aabdalrizky";
   final String playStoreUrl = "https://play.google.com/store/apps/details?id=com.abdalrizky.japridonk";
   final String djangourseUrl = "http://206.189.81.134";
+  final String tbmAzygosUrl = "https://tbmazygos.fk.unmul.ac.id";
   final String fotoProfilUrl = "assets/images/profile_picture.jpg";
   final String japriDonkLogoPath = "assets/images/japridonk.webp";
   final String djangourseLogoPath = "assets/images/djangourse.png";
+  final String tbmAzygosLogoPath = "assets/images/tbm_azygos.png";
 
   final List<String> skills = const [
     "Laravel",
@@ -176,6 +178,20 @@ class ProfileScreen extends StatelessWidget {
                 onTap: () => _launchURL(djangourseUrl),
                 isSpecial: true,
               ),
+              _buildLinkCard(
+                leadingWidget: ClipOval(
+                  child: SizedBox(
+                    width: 40,
+                    height: 40,
+                    child: Image.asset(tbmAzygosLogoPath, fit: BoxFit.cover),
+                  ),
+                ),
+                title: 'Website TBM Azygos',
+                subtitle: 'Website profil tentang Unit Kegiatan Mahasiswa (UKM) Fakultas Kedokteran Universitas Mulawarman.',
+                onTap: () => _launchURL(tbmAzygosUrl),
+                isSpecial: true,
+              ),
+
 
               // Divider
               const Divider(),
