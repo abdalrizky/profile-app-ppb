@@ -166,7 +166,7 @@ class ProfileScreen extends StatelessWidget {
               _buildLinkCard(
                 leadingWidget: ClipOval(
                   child: SizedBox(
-                    width: 40, // Ukuran standar leading icon di ListTile
+                    width: 40,
                     height: 40,
                     child: Image.asset(djangourseLogoPath, fit: BoxFit.cover),
                   ),
